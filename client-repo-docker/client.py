@@ -26,8 +26,8 @@ def script():
                 subprocess.run("python3 "+str(dacode), shell=True, check=True,  stdout=subprocess.PIPE, timeout=600)
                 print(time.time() - start_time, "seconds")
             except :
-                os.popen("python3 -m  pipreqs.pipreqs . --force")
-                os.popen("pip3 install -r requirements.txt")
+                #os.popen("python3 -m  pipreqs.pipreqs . --force")
+                #os.popen("pip3 install -r requirements.txt")
                 pass
         except:
             print("error, retrying ...")
@@ -40,8 +40,12 @@ if __name__ == "__main__":
     while x < n :
         x+= 1
         threading.Thread(target=script).start()
-   
 
 
 
-  
+
+
+
+
+
+
