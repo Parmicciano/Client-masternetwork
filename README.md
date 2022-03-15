@@ -5,7 +5,7 @@ This is the client that allows your computer to execute python script in exchang
 This should be used in the directory that contain this repository like the following architecture :
 
 |Documents| -{Client-masternetwork}<br>
-            -updater.py
+|Documents| --updater.py
 ```
 from git import Repo # pip3 install GitPython
 import os, time # already in python3
