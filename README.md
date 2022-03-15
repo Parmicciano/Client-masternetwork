@@ -4,7 +4,7 @@ This is the client that allows your computer to execute python script in exchang
 #About auto update
 This should be used in the directory that contain this repository like the following architecture :
 
-|Documents| -{Client-masternetwork}
+|Documents| -{Client-masternetwork}<br>
             -updater.py
 ```
 from git import Repo # pip3 install GitPython
