@@ -16,15 +16,16 @@ def script():
             }
             r = requests.get(BASEURL+'/python/'+str(PRICE),headers=headers)
             folderid =  r.json()
-            print('newjob !')
+            
             r = requests.get(BASEURL+'/getfile/'+folderid, stream=True)
             z = zipfile.ZipFile(io.BytesIO(r.content))
             dapath = "./filetorun/"+str(random.randint(0,9999988898999989))
             z.extractall(dapath)
             try :
-
+               
                 start_time = time.time()
                 subprocess.run("python3 "+dapath+"/main.py", shell=True, check=True, timeout=600)
+                print('newjob !')
                 os.remove(dapath)
                 print(time.time() - start_time, "seconds")
             except : 
