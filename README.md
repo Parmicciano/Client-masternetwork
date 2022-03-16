@@ -7,7 +7,7 @@ This should be used in the directory that contain this repository like the follo
 |Documents| -{Client-masternetwork}<br>
 |Documents| --updater.py
 
-DON'T FORGET THE .GITIGNORE or you will me mining for free !
+DON'T FORGET THE .GITIGNORE or you will me mining as a volunteer !
 ```
 from git import Repo # pip3 install GitPython
 import os, time # already in python3
