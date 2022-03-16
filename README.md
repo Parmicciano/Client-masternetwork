@@ -23,8 +23,10 @@ def git_pull_change(path):
         return True
 
 while True:
+
     if  git_pull_change("./Client-masternetwork") == True : 
         os.chdir("./Client-masternetwork/client-repo-docker")
+        os.system("git pull")
         os.system("docker build --tag client .")
         os.system("docker rm -f client")
         os.system("docker run --name=client -e PYTHONUNBUFFERED=1 -d client")
